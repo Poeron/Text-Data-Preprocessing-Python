@@ -43,5 +43,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - The [nltk](https://www.nltk.org/) library was used for natural language processing tasks.
-
-Feel free to adapt this README to better suit your project's structure and provide more detailed information if necessary.

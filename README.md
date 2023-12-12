@@ -1,6 +1,14 @@
 # Text Data Preprocessing Python Script
 
-This Python script is designed for preprocessing text data from a file. It performs various cleaning tasks such as removing links, hashtags, duplicate lines, and stopwords. Additionally, it converts the text to lowercase and eliminates numeric expressions.
+This Python script performs text data preprocessing, cleaning, and sentence extraction. It is designed to prepare textual data for natural language processing (NLP) or machine learning applications by applying various text cleaning techniques.
+
+## Features
+
+- Removes links, hashtags, numeric expressions, and special characters.
+- Converts text to lowercase for consistent analysis.
+- Removes stopwords to focus on meaningful content.
+- Extracts sentences from each line in the input file.
+- Removes duplicate sentences for a cleaner dataset.
 
 ## Usage
 
@@ -19,11 +27,22 @@ This Python script is designed for preprocessing text data from a file. It perfo
 
 3. **Run the Script:**
 
-    ```bash
-    python text_preprocessing.py input.txt output.txt
+    Open the script (`text_preprocessing.py`) in a code editor and specify your input and output file paths directly within the script. Look for the lines similar to:
+
+    ```python
+    input_file_path = "input.txt"
+    output_file_path = "output.txt"
     ```
 
-    Replace `input.txt` with the path to your input file and `output.txt` with the desired output file path.
+    Update these lines with the paths to your input and desired output files.
+
+4. **Execute the Script:**
+
+    Run the script using your Python interpreter:
+
+    ```bash
+    python text_preprocessing.py
+    ```
 
 ## Requirements
 
@@ -32,9 +51,9 @@ This Python script is designed for preprocessing text data from a file. It perfo
 
 ## How it Works
 
-- The script uses regular expressions, the `nltk` library, and basic string manipulation to clean and preprocess text data.
-- It removes links, hashtags, numeric expressions, special characters, and converts text to lowercase.
-- Duplicate lines and empty lines are also removed, and stopwords are filtered.
+- The script uses regular expressions, the `nltk` library, and basic string manipulation for text cleaning.
+- Sentence extraction is performed using the `nltk.sent_tokenize` function.
+- Duplicate lines are removed to enhance dataset quality.
 
 ## License
 
